@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:state_pressed="false">
+        <layer-list>
+
+            <item>
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+
+            <item android:bottom="2dp" android:drawable="@drawable/ic_mapmode_satellite" android:left="2dp" android:right="2dp" android:top="2dp" />
+
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false" android:state_pressed="true">
+        <layer-list>
+
+            <item>
+                <shape>
+                    <corners android:radius="3dp" />
+                    <solid android:color="@color/title_color" />
+                </shape>
+            </item>
+
+            <item android:bottom="2dp" android:drawable="@drawable/ic_mapmode_satellite" android:left="2dp" android:right="2dp" android:top="2dp" />
+        </layer-list>
+    </item>
+
+    <item android:state_checked="true">
+        <layer-list>
+
+            <item>
+                <shape>
+                    <corners android:radius="3dp" />
+                    <solid android:color="@color/title_color" />
+                </shape>
+            </item>
+
+            <item android:bottom="2dp" android:drawable="@drawable/ic_mapmode_satellite" android:left="2dp" android:right="2dp" android:top="2dp" />
+
+        </layer-list>
+    </item>
+
+</selector>

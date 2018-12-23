@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <include layout="@layout/layout_map_search" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_tools_rightTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_overlay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_map_tc" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_tools_bottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_map_dw" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.cijianyouqing.traveler.view.MapRightView
+        android:id="@+id/mapRightView"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:orientation="vertical" />
+
+</android.support.v4.widget.DrawerLayout>
